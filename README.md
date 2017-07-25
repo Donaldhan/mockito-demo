@@ -24,3 +24,9 @@ both for static methods and constructors. PowerMock aims
 to extend the existing API's with a small number of methods 
 and annotations to enable the extra features. 
 Currently PowerMock supports EasyMock and Mockito.
+
+
+############################################################
+before you use the demo, should own junit knowledge, and you can see the below link demo:
+
+https://github.com/Donaldhan/junit-demo.git
