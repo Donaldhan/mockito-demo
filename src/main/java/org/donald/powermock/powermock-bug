@@ -1,0 +1,29 @@
+org.powermock.reflect.exceptions.FieldNotFoundException: Field 'fTestClass' was not found in class org.junit.internal.runners.MethodValidator.
+at org.powermock.reflect.internal.WhiteboxImpl.getInternalState(WhiteboxImpl.java:581)
+at org.powermock.reflect.Whitebox.getInternalState(Whitebox.java:308)
+at org.powermock.modules.junit4.internal.impl.testcaseworkaround.PowerMockJUnit4MethodValidator.validate TestMethods(PowerMockJUnit4MethodValidator.java:79)
+at org.powermock.modules.junit4.internal.impl.testcaseworkaround.PowerMockJUnit4MethodValidator.validate InstanceMethods(PowerMockJUnit4MethodValidator.java:49)
+at org.junit.internal.runners.MethodValidator.validateMethodsForDefaultRunner(MethodValidator.java:51)
+at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.validate(PowerMockJUnit44RunnerDelegateImpl.java:108)
+...
+##############################################################################
+org.powermock.reflect.exceptions.FieldNotFoundException: Field 'fTestClass' 
+was not found in class org.junit.internal.runners.MethodValidator. #28
+#####################
+see #https://github.com/snowdream/SnowdreamFramework/issues/28
+#https://stackoverflow.com/questions/26192929/unable-to-run-junit-test-with-powermockrunner
+##
+care the version of junit and powermock dependency
+#################################################################
+testCompile 'junit:junit:4.12',
+            'org.powermock:powermock-core:1.6.1',
+            'org.powermock:powermock-module-junit4:1.6.1',
+            'org.powermock:powermock-api-mockito:1.6.1'
+#################################################################
+If you cannot upgrade PowerMock then you can use JUnit 4.11.
+#################################################################
+testCompile 'junit:junit:4.11',
+            'org.powermock:powermock-core:1.5.6',
+            'org.powermock:powermock-module-junit4:1.5.6',
+            'org.powermock:powermock-api-mockito:1.5.6'
+#################################################################
