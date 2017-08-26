@@ -30,3 +30,4 @@ Currently PowerMock supports EasyMock and Mockito.
 before you use the demo, should own junit knowledge, and you can see the below link demo:
 
 https://github.com/Donaldhan/junit-demo.git
+
