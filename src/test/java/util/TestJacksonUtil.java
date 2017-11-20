@@ -26,7 +26,7 @@ import org.slf4j.LoggerFactory;
  * 下午9:57:07
  */
 public class TestJacksonUtil {
-   private static final Logger log = LoggerFactory.getLogger(TestacksonUtil.class);
+   private static final Logger log = LoggerFactory.getLogger(TestJacksonUtil.class);
    private static JacksonUtil jacksonUtil = null;
 	/**
 	 * @throws java.lang.Exception
